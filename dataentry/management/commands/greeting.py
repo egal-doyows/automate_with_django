@@ -6,7 +6,7 @@ from django.core.management.base import BaseCommand
 class Command(BaseCommand):
     help = "Greets the users"
     def add_arguments(self, parser):
-        parser.add_argument('name', type=str,help="specifies username")
+        parser.add_argument('name', type=str,help="specifies usernames")
         
 
     def handle(self , *args, **kwargs):
